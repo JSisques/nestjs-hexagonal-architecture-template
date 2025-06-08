@@ -10,4 +10,8 @@ export class User {
   static fromPrimitve(user: IUser): User {
     return new User(user);
   }
+
+  toPrimitve(): IUser {
+    return this.user;
+  }
 }
