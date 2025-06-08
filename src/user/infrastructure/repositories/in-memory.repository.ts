@@ -1,7 +1,9 @@
 import { IUserRepository } from 'src/user/domain/repositories/user.repository';
 import { IUser } from 'src/user/domain/interfaces/user.interface';
 import { User } from 'src/user/domain/entities/user.entity';
+import { Injectable } from '@nestjs/common';
 
+@Injectable()
 export class InMemoryUserRepository implements IUserRepository {
   private users: IUser[] = [];
 

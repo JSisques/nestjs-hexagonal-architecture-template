@@ -2,7 +2,9 @@ import { User } from 'src/user/domain/entities/user.entity';
 import { ICreateUserUseCaseInput } from './create-user-use-case.dto';
 import { IUserRepository } from 'src/user/domain/repositories/user.repository';
 import { v4 as uuidv4 } from 'uuid';
+import { Injectable } from '@nestjs/common';
 
+@Injectable()
 export class CreateUserUseCase {
   constructor(private readonly userRepository: IUserRepository) {}
 
