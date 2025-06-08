@@ -6,7 +6,7 @@ import { Injectable } from '@nestjs/common';
 import { UserNotFoundByIdException } from 'src/user/domain/exceptions/user-not-found-by-id.exception';
 
 @Injectable()
-export class UpdateUserUseCase {
+export class FindUserByIdUseCase {
   constructor(private readonly userRepository: IUserRepository) {}
 
   async execute(input: IFindUserByIdUseCaseInput): Promise<User> {

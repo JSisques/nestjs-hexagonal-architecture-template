@@ -6,7 +6,7 @@ import { Injectable } from '@nestjs/common';
 import { UserNotFoundByEmailException } from 'src/user/domain/exceptions/user-not-found-by-email.exception';
 
 @Injectable()
-export class UpdateUserUseCase {
+export class FindUserByEmailUseCase {
   constructor(private readonly userRepository: IUserRepository) {}
 
   async execute(input: IFindUserByEmailUseCaseInput): Promise<User> {
