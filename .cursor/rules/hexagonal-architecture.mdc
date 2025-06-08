@@ -3,3 +3,4 @@ description:
 globs: 
 alwaysApply: true
 ---
+The project must strictly follow a hexagonal architecture (also known as ports and adapters), with a clear separation of concerns by feature or business domain. Each functionality should be encapsulated in its own module, following NestJS best practices for modularity, dependency injection, and scalability. All business logic must reside in the domain layer, with infrastructure and application layers decoupled via interfaces. The codebase should be organized to facilitate easy extension and maintenance, ensuring that new features can be added without impacting existing functionality.
